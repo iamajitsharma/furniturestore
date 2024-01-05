@@ -4,7 +4,7 @@ import { cn } from "helper/utils";
 import Link from "next/link";
 
 const buttonVariants = cva(
-  "inline-flex max-w-fit items-center justify-center rounded-full text-sm font-semibold uppercase transition-colors focus:outline-none focus:ring-0 disabled:opacity-50  disabled:pointer-events-none data-[state=open]:bg-slate-100",
+  "inline-flex min-w-fit items-center justify-center rounded-full text-sm font-semibold uppercase transition-colors focus:outline-none focus:ring-0 disabled:opacity-50  disabled:pointer-events-none data-[state=open]:bg-slate-100",
   {
     variants: {
       variant: {
@@ -15,8 +15,8 @@ const buttonVariants = cva(
           "bg-transperant text-primary border-2 border-gray-100 hover:bg-primary hover:text-white hover:transition hover:duration-150 hover:ease-in-out",
       },
       size: {
-        default: "px-3 py-2 md:px-6 md:py-3",
-        sm: "px-6 py-2 md:px-8 md:py-3",
+        default: "px-4 py-2 md:px-4 md:py-2",
+        sm: "px-2 py-2 md:px-0 md:py-3",
       },
     },
     defaultVariants: {

@@ -1,3 +1,8 @@
+//import node module libraries
+import Image from "next/image";
+import { Fragment } from "react";
+
+//import custom components
 import {
   Container,
   Button,
@@ -5,10 +10,12 @@ import {
   ProductList,
   SpringTrend,
 } from "components";
-import Image from "next/image";
+
 import CoverImage from "public/images/furniturestore-slider-pic1.webp";
-import { Fragment } from "react";
 import { products } from "data/product";
+import CompanyFeature from "components/features/CompanyFeature";
+import OurClient from "components/features/OurClient";
+import NewsLetter from "components/NewsLetter";
 
 export default function Home() {
   return (
@@ -127,6 +134,15 @@ export default function Home() {
 
       {/* Spring Trend */}
       <SpringTrend />
+
+      {/* Company Feature */}
+      <CompanyFeature />
+
+      {/* Our Client */}
+      <OurClient />
+
+      {/* Newletter */}
+      <NewsLetter />
     </Fragment>
   );
 }

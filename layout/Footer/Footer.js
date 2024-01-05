@@ -5,7 +5,7 @@ import { Button } from "components";
 const Footer = () => {
   return (
     <footer className="hidden md:block relative w-full h-full pt-20">
-      <div className="grid grid-cols-4 px-24 p-4 absolute ">
+      <div className="grid grid-cols-4 gap-10 px-24 p-4 absolute ">
         <div className="">
           <div className="flex flex-col justify-between h-fit gap-8">
             <div>
